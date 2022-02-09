@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bootstrap Cont. </title>
+        <meta charset="utf-8" /> <!-- charset --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- viewport --> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" /> <!-- Bootstrap CSS --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
+    </head>
+    <body>
+    <!--
+        <div class="container">
+            <h1> Bootstrap Forms </h1>
+        </div>
+
+        <div class="container">
+            <form method="post" action="http://localhost:3000">
+                <label class="form-label" for="txt_login">Login:</label>
+                <input class="form-control" type="email" name="txt_login" id="txt_login" />
+                <label class="form-group" for="txt_pass">Password:</label>
+                <input class="form-control" type="password" name="txt_pass" id="txt_pass" />
+                <span class="form-text"> Must be 8-20 characters long.</span> <br/>
+                <button type="submit" class="btn btn-outline-primary"> Sign-in </button>
+                <a href="#" class="btn btn-success"> Link </a>
+            </form> 
+        </div>  
+        
+        <br/>
+        <br/>
+    -->
+
+        <!-- Horizontal forms -->
+        <div class="container">
+            <h1> Bootstrap Forms </h1>
+        </div>
+
+        <div class="container">
+            <form class="was-validated" method="post" action="http://localhost:3000">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-2" style="text-align:right;">
+                        <label class="col-form-label" for="text_login"> Login:</label>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <input class="form-control" type="email" name="txt_login" required />
+                        <div class="invalid-feedback"> Please fill out this field. </div>
+                    </div>
+                </div> <!--closing row -->
+                <!-- repeat similarly for password -->
+                <div class="row mb-2"> 
+                    <div class="col-12 col-md-2" style="text-align:right;">
+                        <label class="col-form-label" for="txt_pass">Password:</label>
+                    </div>
+                    <div class="col-12 col-md-3"> 
+                        <input class="form-control" type="password" name="txt_pass" id="txt_pass" required minlength="8" maxlength="20" />
+                    </div>
+                    <div class="col">
+                        <span class="form-text"> Must be 8-20 characters long.</span> <br/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="offset-md-1 col-6 col-md-2 d-grid">
+                        <button type="submit" class="btn btn-primary btn-block"> Sign-in </button>
+                    </div>
+                    <div class="col-6 col-md-2 d-grid">
+                        <a href="#" class="btn btn-success btn-block"> Link </a>
+                    </div>
+                </div>
+            </form> 
+        </div>
+        
+        
+    </body>
+</html>

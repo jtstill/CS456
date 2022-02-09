@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html><head> 
+      <title> CS456 </title>
+   </head>
+   <body>
+      <header>
+         <h1>Class CSS - Lecture 05 </h1>
+      </header>
+      
+      <nav>
+      Navigation Menu
+      <ul>
+         <li> <a href="https://www.w3schools.com/"> W3Schools </a> </li>
+         <li> <a href="https://www.w3schools.com/css/default.asp"> CSS Tutorial </a> </li>
+         <li> <a href="https://www.w3schools.com/html/default.asp"> HTML Tutorial </a> </li>
+      </ul>
+      </nav>
+      
+      <div id="main">
+            
+      <section>
+      <p style="color:#00FF00;"> Yadda yadda yadda yadda yadda yadda yadda <br>
+       yadda yadda yadda yadda yadda yadda yadda <br>
+        yadda yadda yadda yadda yadda yadda <br>
+         yadda yadda yadda yadda yadda yadda yadda <br>
+          yadda yadda yadda yadda yadda yadda yadda
+           yadda yadda yadda yadda </p>
+       
+           
+       </section>
+       
+       
+           <p>
+       Yadda yadda yadda yadda yadda yadda yadda
+       yadda yadda yadda yadda yadda yadda yadda
+        yadda yadda yadda yadda yadda yadda
+         yadda yadda yadda yadda yadda yadda yadda
+          yadda yadda yadda yadda yadda yadda yadda
+           yadda yadda yadda yadda </p>
+        
+      </div>
+      
+      <footer>
+         Web Master <a href="mailto:hsrocha@loyola.edu"> Prof. Rocha </a>
+      </footer>
+   
+</body></html>

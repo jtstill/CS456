@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> HTML Forms </title>
+	</head>
+	<body>
+		<h1> Lecture 04 - HTML Forms </h1>
+		<hr /> <!-- Tag <hr>:horizontal rule; it creates a line -->
+		<form action="http:localhost:3000" method="get">
+			<p> <label for="txt_fname"> First Name: </label>
+				<input type="text" name="txt_fname" id="txt_fname" required placeholder="Type your name"/> <br/>
+				<label for="txt_lname"> Last Name: </label>
+				<input type="text" name="txt_lname" id="txt_lname" required/> <br/> 
+				
+				<label for="txt_pass"> Password: </label>
+				<input type="password" name="txt_pass" id="txt_pass" required minlength="6"/> <br/>
+				
+				<label for="txt_num"> Number: </label>
+				<input type="number" name="txt_num" id="txt_num" /> <br/>
+				
+				<label for="num_range"> Range: </label>
+				<input type="range" name="num_range" id="num_range" /> <br/>
+				
+				<label for="txt_desc"> Description: </label>
+				<textarea name="txt_desc" id="txt_desc" rows="5", cols="40" >Place your description here
+				</textarea> <br/>
+				
+				<!-- Buttons! -->
+				<input type="checkbox" name="chk_email" id="chk_email" checked />
+				<label for="chk_email"> Click here to opt out of emails. </label> <br/>
+				
+				<!-- Radio Button -->
+				Payment Options:
+				<input type="radio" name="payment" id="rd1" value="credit"/> <label for="rd1">Credit Card</label>
+				<input type="radio" name="payment" id="rd2" value="transfer"/> <label for="rd2">Bank Transfer</label>
+				<input type="radio" name="payment" id="rd3" value="crypto" /> <label for="rd3">Crytocurrency</label> <br/>
+
+				<!-- Combo Box -->
+				Favorite Language:
+				<select name="language">
+					<option value="js" selected>JavaScript</option>
+					<option value="sm">Smalltalk</option>
+					<option value="java">Java</option>
+				</select> <br/>
+				
+				<!-- List Box -->
+				Languages you Know:
+				<select name="language" multiple>
+					<option value="js">JavaScript</option>
+					<option value="sm">Smalltalk</option>
+					<option value="java">Java</option>
+					<option value="c">C</option>
+				</select> <br/>
+				
+				<!-- Upload -->
+				<label for="flc">Select a picture</label> 
+				<input type="file" name="flc" accept="image/*" /> <br/>
+
+				<!-- Search Field -->
+				<label for="search_prod">Product:</label> 
+				<input type="search" name="search_prod" />
+				<button type="submit"> Search </button> <br/>
+				
+				<!-- Date and Time Fields -->
+				Date: <input type="date" />
+				Time: <input type="time" />
+				Datetime: <input type="datetime-local" />
+				Month: <input type="month" />
+				Week: <input type="week" /> <br/>
+				
+				<!-- Color Selection -->
+				<label for="selcol">Color:</label>
+				<input type="color" name="selcol"/> <br/>
+				
+				<!-- Hidden Field -->
+				<!-- don't store sensitie information here -->
+				<input type="hidden" name="id_product" value="42"/>
+
+
+
+
+
+
+				<input type="submit" /> <input type="reset" /> <br/>
+				<button type="submit"> <h2> Fancy Custom Button! </h2> </button> <br/>
+				
+				
+				</p>
+		</form>
+	</body>
+</html>

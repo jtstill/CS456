@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html><head>
+    <style type="text/css">
+        div#statement{
+            font-size:1.2em;
+        }
+        h1 {
+            color:green;
+            background-color:rgb(146, 140, 140);
+        }
+        label:hover {
+            font-weight:bold;
+        }
+        input:valid {
+            background-color:#aaffaa;
+        }
+        input:invalid {
+            border:1px solid red;
+            border-radius:5px;
+        }
+        input:focus {
+            border-width:0px;
+            background-color:#ffffaa;
+        }
+        /* Note: HAS to be valid, then invalid, then focus, because of the order in which they apply */
+    </style>
+ </head>
+ <body>
+   <header>
+      <h1> Lecture 7 - Classroom Exercise </h1>
+   </header>
+   <div id="main">
+       <div id="statement">
+         <p> In this exercise, you are going to practice some CSS code and 
+         pseudo-classes. A good aplication of pseudo-classes is to format 
+         form inputs, and that is the focus of the exercise today. 
+         Apply the following formats by creating appropriate CSS styles 
+         in the head tag:</p>
+         <ul>
+           <li> Change the heading (h1) text to your favorite color, 
+                and its background color for another color that matches well. </li>
+           <li> When mouse hover a form label, change label text to bold. </li>
+           <li> Change the background color to green if the form input is valid. </li>
+           <li> Create a 1px red border with rounded corners, if the form input is invalid. </li>
+           <li> Change the background color to yellow, and set the border to 0px, if the form input has focus. </li>
+         </ul>
+       </div>
+       <div id="exercise">
+         <hr>
+         <form action="http://localhost:3000" method="post">
+            <label for="txt_name"> Name: </label>
+            <input type="text" name="txt_name" id="txt_name" required=""> <br>
+            <label for="txt_email"> Email: </label>
+            <input type="email" name="txt_email" id="txt_email" required=""> <br>
+            <label for="txt_pass"> Password: </label>
+            <input type="password" name="txt_pass" id="txt_pass" minlength="8" required=""> <br>
+   
+            <button type="submit"> Submit </button>
+            <button type="reset"> Reset </button>
+         </form>
+         <br>
+         <hr>
+       </div>
+   </div>
+   <footer>
+      WebMaster <a href="mailto:hsrocha@loyola.edu"> Prof. Rocha </a>
+   </footer>    
+ 
+</body></html>

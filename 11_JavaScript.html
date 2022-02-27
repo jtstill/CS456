@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript </title>
+        <meta charset="utf-8"> <!-- charset --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- viewport --> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> <!-- Bootstrap CSS --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS --> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> <!-- Bootstrap Icons -->
+    
+        <script>
+            let i = 0;
+            console.log(i++); // will print 0, THEN increment; to print 1, do ++i
+            let msg = 'Hello World';
+            console.log(msg);
+
+            const PI = 3.14159;
+            const a1 = [1, 2, 3, 4];
+            console.log(a1[0]);
+            a1[0] = 20; // can reassaign item in array
+            //a1 = [200,201]; // will not work
+            console.log(a1);
+
+            const person = {_id:1,name:"Jack Still",email:"jtstill@loyola.edu"}; // literal object; assign attributes and values
+            console.log(person.name);
+            person.phone = "123-456-7890";
+            console.log(person);
+
+            const funcHello = function(){
+                return "Hello World!"
+            }
+            function anotherHello(){
+                return "Another Hello";
+            }
+            const fHello = () => "Hello World";
+
+            console.log( funcHello() );
+            console.log( anotherHello() );
+            console.log( fHello() );
+
+            let out = '';
+            for(let i in person) {
+                out += person[i]+' ';
+            }
+            console.log(out);
+
+            const primes = [2, 3, 5, 7, 11];
+            out = '';
+            // for(let j=0; j<primes.length;j++){} // regular for loop
+            for(let x of primes){
+                out += x + ", ";
+            }
+            console.log(out);
+
+        </script>
+    </head>
+    <body>
+        <h1> JavaScript Basics </h1>
+    </body>
+</html>

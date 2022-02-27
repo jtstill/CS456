@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bootstrap Basics </title>
+        <meta charset="utf-8"> <!-- charset --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- viewport --> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> <!-- Bootstrap CSS --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS --> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  <!-- Bootstrap Icons -->   
+        <script src="13_JavaScript.js"> </script>
+    </head>
+    <body>
+        <div class="container-fluid p-4 text-center bg-success text-white">
+        <h1>
+            Lecture 13 -- JavaScript
+        </h1>
+        </div>
+        <!-- A grey horizontal navbar that becomes vertical on small screens -->
+        <nav class="navbar navbar-expand-sm bg-light">
+
+            <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="container">  
+            <button class="btn btn-primary" onclick="changeLinks();"> 
+                Transform Links 
+            </button>
+            <br> <br>
+
+            <div class="">
+                <form action="" method="post">
+                    <label for="txt_login"> Login: </label> 
+                    <input type="email" name="txt_login" id="txt_login"><br>
+                    <label for="txt_pass"> Password: </label> 
+                    <input type="password" name="txt_pass" id="txt_pass"> 
+                    <input type="checkbox" name="chk_show_pass" id="chk_show_pass" onclick="showHidePassword();"> 
+                    <label for="chk_show_pass">Show Password</label> <br>
+                    <input type="submit"> <input type="reset">
+                </form>
+            </div>
+        </div>
+
+        <footer style="position:absolute;bottom:5%;">
+            <div> Footer WebMaster <a href="mailto:hsrocha@loyola.edu"> H.Rocha</a> </div>
+        </footer>
+
+
+    </body>
+</html>
